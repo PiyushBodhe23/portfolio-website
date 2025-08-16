@@ -1,664 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Piyush Bodhe | Software Engineer & Web Developer</title>
-    <meta name="description" content="Portfolio of Piyush Bodhe – Software Engineer & Web Developer focused on impactful, scalable solutions with Python, C++, Flutter, and web technologies.">
-    <meta name="keywords" content="Piyush Bodhe, portfolio, software engineer, web developer, flutter, python, c++, DSA, full-stack, embedded systems, competitive programming">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="main.css" rel="stylesheet">
-
-    <style>
-        /* Add any custom CSS specific to new elements or overriding existing styles if needed */
-        .project-item img {
-            max-height: 200px; /* Adjust as needed */
-            object-fit: cover;
-            border-radius: 8px; /* Added for consistency with other rounded elements */
-        }
-        .card-body .d-flex img {
-            border-radius: 50%; /* Make logos round */
-            flex-shrink: 0;
-            margin-right: 0.5rem; /* Ensure spacing for logos */
-        }
-        .d-flex.gap-2 {
-            gap: 0.5rem; /* Bootstrap 5 utility for spacing */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Bodhe | Software Engineer Portfolio</title>
+    <meta name="description" content="Futuristic portfolio of Piyush Bodhe - Software Engineer & Web Developer">
+    <meta name="keywords" content="software engineer, web developer, portfolio, Piyush Bodhe, coding, programming">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
-
-<body class="index-page">
-  <!-- ======= Header ======= -->
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/photo profile.jpg" class="img-fluid rounded-circle" alt="Piyush Bodhe">
-    </div>
-
-    <a href="#hero" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Piyush Bodhe</h1>
-    </a>
-
-      <div class="social-links text-center">
-            <a href="https://twitter.com/@PiyushBodhe_23" class="twitter" target="_blank" rel="noopener noreferrer" aria-label="Piyush Bodhe on X (formerly Twitter)"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://github.com/PiyushBodhe23" class="github" target="_blank" rel="noopener noreferrer" aria-label="Piyush Bodhe on GitHub"><i class="bi bi-github"></i></a>
-            <a href="https://instagram.com/piyushbodhe_23" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Piyush Bodhe on Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/piyush-bodhe-58986528a" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Piyush Bodhe on LinkedIn"><i class="bi bi-linkedin"></i></a>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="glitch" data-text="PB">PB</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#resume" class="nav-link">RESUME</a></li>
+                <li><a href="#download" class="nav-link">DOWNLOAD</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#certifications" class="nav-link">CERTIFICATIONS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="glitch-text" data-text="PIYUSH BODHE">PIYUSH BODHE</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Crafting the future through code • Building tomorrow's solutions today
+                </p>
+                <div class="hero-buttons">
+                    <button class="cyber-btn primary" onclick="scrollToSection('projects')">
+                        <span>VIEW PROJECTS</span>
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                    </button>
+                    <button class="cyber-btn secondary" onclick="scrollToSection('contact')">
+                        <span>CONTACT</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="social-links" style="justify-content: center;">
+                        <a href="https://github.com/PiyushBodhe23" target="_blank" class="social-link" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/piyush-bodhe-58986528a" target="_blank" class="social-link" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/@PiyushBodhe_23" target="_blank" class="social-link" aria-label="Twitter profile">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/piyushbodhe_23" target="_blank" class="social-link" aria-label="Instagram profile">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hologram-container">
+                    <div class="hologram-avatar">
+                        <img src="assets/img/photo suit.jpg" alt="Piyush Bodhe portrait" class="avatar-img" loading="lazy">
+                        <div class="hologram-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <!-- ======= Navigation ======= -->
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a class="active" href="#hero"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-lightning-charge navicon"></i> Skills</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#projects"><i class="bi bi-terminal navicon"></i> Projects</a></li>
-        <li><a href="#certs"><i class="bi bi-patch-check navicon"></i> Certifications</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- End Navigation -->
-  </header><!-- End Header -->
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container" style="margin-top: 1cm;">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="ABOUT.ME">ABOUT.ME</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">AboutMe.java</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line">
+                                <span class="keyword">public class</span> <span class="class-name">AboutMe</span> {
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> name = <span class="string">"Piyush Bodhe"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> role = <span class="string">"Software Engineer"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> location = <span class="string">"Pune, India"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String[]</span> skills = {<span class="string">"Python"</span>, <span class="string">"Java"</span>, <span class="string">"C++"</span>, <span class="string">"JavaScript"</span>};
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> passion = <span class="string">"Building the future"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> birthday = <span class="string">"23 Feb 2006"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> college = <span class="string">"JSPM's RSCOE, Pune"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> phone = <span class="string">"+91 9022749102"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> city = <span class="string">"Pune, Maharashtra, India"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private int</span> age = <span class="number">20</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> degree = <span class="string">"B.Tech (E&TC)"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private String</span> email = <span class="string">"piyushbodhe23@gmail.com"</span>;
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">private boolean</span> freelance = <span class="keyword">true</span>; <span class="comment">// Available</span>
+                            </div>
+                            <div class="code-line-last">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <main class="main">
+<!-- experience section -->
 
-    <!-- ======= Hero Section ======= -->
+<div class="section-header">
+    <h2 class="section-title glitch" data-text="EXPERIENCE">EXPERIENCE</h2>
+    <div class="section-line"></div>
+</div>
+
+<div class="experience-section" >
+    <div class="experience-wrapper" id="experienceWrapper">
+      <div class="experience-card">
     
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/backgrount photo.jpg" class="w-100" alt="Hero background" data-aos="fade-in">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="fw-bold">Piyush Bodhe</h2>
-        <p>I'm <span class="typed" data-typed-items="Software Engineer, Web Developer, Problem Solver, Learner "></span></p>
+        <h2>WEB DEV (LEAD)</h2>
+        <h4>ENTESA | 2025 - Present</h4>
+        <p>
+          Working on full-stack web development using React, Node.js, and cloud services. 
+          Built scalable applications and led a team of 4 developers.
+          Managing Event Based on Dev under ENTESA
+        </p>
       </div>
-    </section><!-- End Hero -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>About</h2>
-                <p>I’m a passionate and self‑driven Software Engineer with a deep interest in building real‑world solutions through code. My expertise spans <b>full-stack development, data structures, and algorithms</b>, with a proven ability to translate complex problems into elegant, efficient, and scalable software. From designing my own finance‑manager app to simulating communication systems like PCM in Multisim, I enjoy turning ideas into working digital products.</p>
-                <p>Currently, I'm rigorously preparing for <b>GATE CSE 2026</b>, solidifying my foundation in core computer science concepts while actively exploring Python for data science and advanced full‑stack application development. I'm always eager to take on challenging projects that demand innovative problem-solving.</p>
+      <div class="experience-card">
+        <h2>Head Counselling</h2>
+        <h4> OWN | 2024 - Present</h4>
+        <p>
+          	Organized webinars, group sessions, and personal mentorship based on personal experience and proven strategies.
+	        Helped 100+ students with subject guidance, time management, and resource planning.
+	        Built a supportive peer community to reduce exam stress and boost motivation.
+        </p>
+      </div>
+
+      <div class="experience-card">
+        <h2>Freelancer</h2>
+        <h4>Remote | 2024 - Present</h4>
+        <p>
+        Took initiative to build and share web development projects with peers.
+        Helped fellow students understand sorting algorithms and front-end logic.
+    	Actively participated in tech communities and coding sessions at college.
+        </p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn" style="margin-right: 30px;">&#10095;</button>
+    </div>
+</div>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="SKILLS.EXE">SKILLS.EXE</h2>
+                <div class="section-line"></div>
             </div>
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row gy-4 justify-content-start">
-                    <div class="col-lg-8 content">
-                        <h2>Software Engineer &amp; Web Developer</h2>
-                        <p class="fst-italic py-3">Turning ideas into code and code into solutions — I craft software that solves real problems.</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 Feb 2006</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>College:</strong> <span>JSPM's RSCOE, Pune</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9022749102</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, Maharashtra, India</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech (E&TC)</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>piyushbodhe23@gmail.com</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                </ul>
-                            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">PROGRAMMING</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">95%</span>
                         </div>
-                        <p class="py-3">I am dedicated to turning complex challenges into effective software solutions. With a strong technical foundation and a creative mindset, I focus on writing clean, efficient code that delivers real value.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- End About -->
-
-    <!-- ======= Stats Section ======= -->
-    <section id="stats" class="stats section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 text-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong><br><span class="small">Freelance & academic deliveries</span></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong><br><span class="small">Personal, academic &collab work</span></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Coding</strong><br><span class="small">Hands‑on practice & builds</span></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Collaborators</strong><br><span class="small">Peers & mentors</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Stats -->
-
-   
-<!-- ======= Skills Section ======= -->
-<section id="skills" class="skills section">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Skills</h2>
-      <p>A blend of technical expertise and soft skills that fuel my growth as a full‑stack developer and problem‑solver.</p>
-    </div>
-
-    <div class="row justify-content-center text-center">
-
-      <!-- HTML Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="100">
-            <span class="skill-label">HTML</span>
-            <span class="percentage-value">95%</span> <!-- Initial value, will animate -->
-          </div>
-        </div>
-      </div>
-
-      <!-- CSS Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="150">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="95">
-            <span class="skill-label">CSS</span>
-            <span class="percentage-value">96%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- JavaScript Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="85">
-            <span class="skill-label">JavaScript</span>
-            <span class="percentage-value">90%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Python Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="250">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="90">
-            <span class="skill-label">Python</span>
-            <span class="percentage-value">94%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- C / C++ Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="88">
-            <span class="skill-label">C / C++</span>
-            <span class="percentage-value">99%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Java Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="350">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="80">
-            <span class="skill-label">Java</span>
-            <span class="percentage-value">99%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- OOP & DSA Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="85">
-            <span class="skill-label">OOP & DSA</span>
-            <span class="percentage-value">95%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Competitive Programming Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="550">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="80">
-            <span class="skill-label">Competitive Programming</span>
-            <span class="percentage-value">95%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Team Leadership & Communication Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="90">
-            <span class="skill-label">Team Leadership & Communication</span>
-            <span class="percentage-value">99%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Creative Strategy & Project Management Skill -->
-      <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="650">
-        <div class="skill-circle-container">
-          <div class="skill-circle-inner" data-percentage="88">
-            <span class="skill-label">Creative Strategy & Project Management</span>
-            <span class="percentage-value">99%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- End Skills Section -->
-
-
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume section">
-
-
-    <!-- ======= Resume Section ======= -->
-
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Passionate fresher ready to bring strong coding and problem‑solving skills to impactful software projects.</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Piyush Bodhe</h4>
-              <p><em>Creative Software Engineer experienced in web development, embedded systems & competitive programming. Known for writing clean, efficient, scalable code.</em></p>
-              <ul>
-                <li>Pune, Maharashtra, India</li>
-                <li>+91 9022749102</li>
-                <li>piyushbodhe23@gmail.com</li>
-              </ul>
-            </div>
-            
-                        <h3 class="resume-title">Education</h3>
-                        <div class="resume-item">
-                            <h4>B.E. Electronics &amp; Telecommunication</h4>
-                            <h5>2023–2027 </h5>
-                            <p><em>Rajarshi Shahu College of Engineering, Pune</em></p>
-                            <p>CGPA: 8.0/10 (current). Coursework includes Digital Communication, Data Structures & Algorithms, OOP, Microcontrollers (PIC18). Actively participated in hackathons.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h3 class="resume-title">Download</h3>
-                        <a href="assets/resume/Piyush_Bodhe_resume_portfolio.docx" class="btn btn-primary" download><i class="bi bi-download"></i> Download PDF Resume</a>
-                        <p class="mt-3">A detailed overview of my skills, projects, and experiences.</p>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
                     </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C/C++</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">OOP</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">DSA</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">COMPETITIVE PROGRAMMING</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">WEB TECH : FRONT-END</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">NON TECH</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">TEAM LEADERSHIP</span>
+                            <span class="skill-percent">98%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="98"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">COMMUNICATION</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CREATIVE STRATERGY</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PROJECT MANAGEMENT</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">WEB TECH : BACKEND-END</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">NODE(JS,EXPPRESS,EJS,REST)</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MONGODB</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">TAILWIND</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section><!-- End Resume -->
+    </section>
 
-    <!-- ======= Projects Section ======= -->
-    <!-- existing project items from earlier provided code -->
-    <section id="projects" class="projects section">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title"><h2>Projects</h2></div>
-        <!-- AlgoViz -->
-         <div class="project-item mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <h4 class="mb-3">AlgoViz — Interactive Sorting Algorithm Visualizer</h4>
-                    <p>Developed an interactive web tool to visually demonstrate how various sorting algorithms (Bubble, Merge, Quick Sort) operate in real-time. This project aimed to make complex algorithmic concepts more accessible and intuitive for learners.</p>
-                    <ul>
-                        <li><strong>Problem Solved:</strong> Simplified the understanding of complex sorting algorithms through dynamic visualization.</li>
-                        <li><strong>My Role:</strong> Led front-end development, algorithm implementation, and UI/UX design.</li>
-                        <li><strong>Tech:</strong> HTML5 · CSS3 · JavaScript (ES6+) · Git</li>
-                        <li><strong>Impact:</strong> Received positive feedback from peers for clarifying sorting concepts; applied advanced JavaScript concepts for dynamic DOM manipulation and animation, improving comprehension of algorithm steps by an estimated 30%.</li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                        <a href="https://piyushbodhe23.github.io/Algoviz---Algorithm-Visualizer/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Project Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                        <a href="https://github.com/PiyushBodhe23/Algoviz---Algorithm-Visualizer" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">View Source Code <i class="bi bi-github"></i></a>
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="RESUME">RESUME</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-content">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">Resume.java</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-line">
+                            <span class="keyword" style="margin-left: 2cm;">public class</span> <span class="class-name">Resume</span> {
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> tagline = 
+                            <span class="string">"Passionate fresher ready to bring strong coding and problem-solving skills to impactful software projects."</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> name = <span class="string">"Piyush Bodhe"</span>;
+                        </div>
+                        <div class="code-line indent" >
+                            <span class="keyword">private String</span> summary = 
+                            <span class="string">"Creative Software Engineer experienced in web development, embedded systems & competitive programming. Known for writing clean, efficient, scalable code."</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> city = <span class="string">"Pune, Maharashtra, India"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> phone = <span class="string">"+91 9022749102"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> email = <span class="string">"piyushbodhe23@gmail.com"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> degree = <span class="string">"B.E. Electronics & Telecommunication"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> college = <span class="string">"Rajarshi Shahu College of Engineering, Pune"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> year = <span class="string">"2023 – 2027"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private double</span> cgpa = <span class="number">8.0</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String[]</span> coursework = {
+                                <span class="string">"Digital Communication"</span>,
+                                <span class="string">"Data Structures & Algorithms"</span>,
+                                <span class="string">"OOP"</span>,
+                                <span class="string">"Microcontrollers (PIC18)"</span>
+                            };
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> activities = 
+                            <span class="string">"Actively participated in hackathons"</span>;
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">public void</span> downloadResume() {
+                                System.out.println(<span class="string">"Resume.pdf is ready to download."</span>);
+                            }
+                        </div>
+                        <div class="code-line">}</div>
                     </div>
                 </div>
-  
-        <!-- Portfolio Website -->
-                      
-                <div class="project-item mb-5" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="mb-3">Professional Portfolio Website</h4>
-                    <p>Built a responsive personal portfolio website to showcase my skills, projects, and certifications. Designed for optimal viewing across various devices and to serve as a central hub for my professional online presence.</p>
-                    <ul>
-                        <li><strong>Problem Solved:</strong> Created a professional and accessible platform to present my technical capabilities and project work to potential employers and collaborators.</li>
-                        <li><strong>My Role:</strong> End-to-end development, including responsive design, content creation, and deployment on GitHub Pages.</li>
-                        <li><strong>Tech:</strong> HTML5 · CSS3 · JavaScript · Bootstrap · AOS.js · GitHub Pages</li>
-                        <li><strong>Impact:</strong> Serves as my primary online resume, resulting in X% increase in profile views and Y initial contacts from recruiters.</li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Live Site <i class="bi bi-box-arrow-up-right"></i></a> <!-- Link to your live site -->
-                        <a href="https://github.com/PiyushBodhe23/portfolio-website" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">View Source Code <i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="DOWNLOAD">DOWNLOAD</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-download">
+                <a href="assets/resume/Piyush_Bodhe_resume_portfolio.pdf" download class="cyber-btn primary">
+                    <span>DOWNLOAD RESUME</span>
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="PROJECTS.DB">PROJECTS.DB</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/ALGOVIZ.png" alt="AlgoViz Algorithm Visualizer project" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://piyushbodhe23.github.io/Algoviz---Algorithm-Visualizer/" target="_blank" class="project-link" aria-label="View AlgoViz project">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/PiyushBodhe23/Algoviz---Algorithm-Visualizer" target="_blank" class="project-link" aria-label="View AlgoViz GitHub repository">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AlgoViz</h3>
+                        <p class="project-description">Interactive sorting algorithm visualizer built with vanilla JavaScript</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
                     </div>
                 </div>
 
-        <!-- Voice IoT -->
-                      
-                <div class="project-item mb-5" data-aos="fade-up" data-aos-delay="250">
-                    <h4 class="mb-3">Voice‑Controlled Home Automation (Simulated IoT)</h4>
-                    <p>Developed a prototype simulating a voice-controlled home automation system, enabling users to manage virtual devices using Google Assistant commands integrated via IFTTT.</p>
-                    <ul>
-                        <li><strong>Problem Solved:</strong> Explored and demonstrated the integration of voice commands with IoT devices (simulated), highlighting potential for smart home solutions.</li>
-                        <li><strong>My Role:</strong> Conceptualized system architecture, implemented communication protocols between IFTTT and simulated Arduino, and wrote Python scripts for logic.</li>
-                        <li><strong>Tech:</strong> Arduino (simulated) · IFTTT · Python · Microcontrollers</li>
-                        <li><strong>Impact:</strong> Gained hands-on experience in IoT concepts, API integration, and microcontroller programming, proving ability to connect diverse technologies for functional systems.</li>
-                    </ul>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/Distance_Sensor.jpg" alt="Distance Sensor project" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Distance Sensor project">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Distance Sensor</h3>
+                        <p class="project-description">Arduino-based parking assist system with ultrasonic sensor</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                    </div>
                 </div>
 
-        <!-- Distance Sensor -->
-        <div class="project-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4 class="mb-3">Distance Sensor Using Arduino (Car Parking Prototype)</h4>
-                    <img src="assets/img/Distance_Sensor.jpg" alt="Distance Sensor Screenshot" class="img-fluid rounded mb-3">
-                    <p>Built a functional prototype using an ultrasonic sensor and Arduino to detect obstacles and provide audible alerts via a buzzer, mimicking a car parking assist system.</p>
-                    <ul>
-                        <li><strong>Problem Solved:</strong> Created a simple yet effective embedded system for obstacle detection, illustrating real-world application of sensor technology.</li>
-                        <li><strong>My Role:</strong> Designed circuit, programmed Arduino for sensor data processing, and integrated buzzer for alerts.</li>
-                        <li><strong>Tech:</strong> Arduino · Ultrasonic Sensor (HC-SR04) · Buzzer · C++ (for Arduino)</li>
-                        <li><strong>Impact:</strong> Solidified understanding of embedded systems, sensor interfacing, and practical application of microcontroller programming in a tangible project.</li>
-                    </ul>
-                </div><!-- End Projects -->
-
-    <!-- ======= Certifications Section ======= -->
-    <!-- existing cert card grid from earlier code -->
-    <section id="certs" class="certs section bg-light">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title"><h2>Licenses & Certifications</h2></div>
-        <div class="row gy-4">
-
-
-<!-- Deloitte -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img/cert/deloitte.png" width="40" class="me-2" alt="Deloitte logo"> -->
-        <h5 class="card-title mb-0">Deloitte - Technology Job Simulation</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">Deloitte Australia · Forage · May 2025</small></p>
-      <a href="assets/img/cert/deloitte.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Python · Competitive Programming · Engineering</p>
-    </div>
-  </div>
-</div>
-
-<!--goldman sachs-->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img//cert/goldy.png" width="40" class="me-2" alt="Apna College logo"> -->
-        <h5 class="card-title mb-0">Goldman sachs</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">Goldman sachs · July 2025</small></p>
-      <a href="assets/img/cert/goldy.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">DSA · Java · market analysis</p>
-    </div>
-  </div>
-</div>
-
-<!--Oracle-->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img//cert/goldy.png" width="40" class="me-2" alt="Apna College logo"> -->
-        <h5 class="card-title mb-0">Oracle Cloud Developer</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">Oracle Cloud Developer · July 2025</small></p>
-      <a href="assets/img/cert/oracle.pdf" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Cloud · Developement · market analysis</p>
-    </div>
-  </div>
-</div>
-
-<!-- ai powered -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img//cert/power.png" width="40" class="me-2" alt="Apna College logo"> -->
-        <h5 class="card-title mb-0">Building AI Powered search with Mongo DB</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted"> AI powered search· June 2025</small></p>
-      <a href="assets/img/cert/power.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Mongo db · AI · search engine</p>
-    </div>
-  </div>
-</div>
-
-<!-- mongo -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img//cert/mongo.png" width="40" class="me-2" alt="Apna College logo"> -->
-        <h5 class="card-title mb-0">Introduction to Mongo DB</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted"> Introduction to Mongo DB· June 2025</small></p>
-      <a href="assets/img/cert/mongo.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Mongo DB· website dev · development</p>
-    </div>
-  </div>
-</div>
-
-<!-- Alpha DSA -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img//cert/dsa.png" width="40" class="me-2" alt="Apna College logo"> -->
-        <h5 class="card-title mb-0">Alpha (DSA in Java)</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">Apna College · Mar 2025</small></p>
-      <a href="assets/img/cert/dsa.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">DSA · Java · Competitive Programming</p>
-    </div>
-  </div>
-</div>
-
-<!-- Design Thinking -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img/cert/design thinking.png" width="40" class="me-2" alt="Great Learning logo"> -->
-        <h5 class="card-title mb-0">Design Thinking</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">Great Learning · Dec 2024</small></p>
-      <a href="assets/img/cert/design_thinking.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Design Thinking · Creative Strategy</p>
-    </div>
-  </div>
-</div>
-
-<!-- java -->
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img/cert/java.png" width="40" class="me-2" alt="Great Learning logo"> -->
-        <h5 class="card-title mb-0">Java(Basics)</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">HackerRank · July 2024</small></p>
-      <a href="assets/img/cert/java.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">Java· Creative Strategy</p>
-    </div>
-  </div>
-</div>
-
-
-<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-  <div class="card h-100 shadow-sm border-0">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <!-- <img src="assets/img/cert/design thinking.png" width="40" class="me-2" alt="Great Learning logo"> -->
-        <h5 class="card-title mb-0">Problem Solving</h5>
-      </div>
-      <p class="mb-1"><small class="text-muted">HackerRank · July 2024</small></p>
-      <a href="assets/img/cert/problem.jpg" class="btn btn-sm btn-outline-primary my-2" target="_blank">Show credential</a>
-      <p class="small fst-italic">DSA · Creative Strategy · Problem Solving  </p>
-    </div>
-  </div>
-</div>
-
-<!-- End Certifications Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-   <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Feel free to reach out for collaboration, project inquiries, or just a tech chat.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-
-      <!-- Contact Info -->
-      <div class="col-lg-5">
-        <div class="info-wrap">
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-geo-alt flex-shrink-0"></i>
-            <div>
-              <h3>Address</h3>
-              <p>JSPM’s RSCOE Campus, Pune<br>411033, Maharashtra, India</p>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/IOT.jpg" alt="Voice IoT Control project" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Voice IoT Control project">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Voice IoT Control</h3>
+                        <p class="project-description">Voice-controlled home automation using Google Assistant & IFTTT</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IFTTT</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div><!-- End Info Item -->
+        </div>
+    </section>
 
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-telephone flex-shrink-0"></i>
-            <div>
-              <h3>Call Me</h3>
-              <p>+91&nbsp;90227&nbsp;49102</p>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="CERTIFICATIONS">CERTIFICATIONS</h2>
+                <div class="section-line"></div>
             </div>
-          </div><!-- End Info Item -->
+            <div class="certifications-content">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">Certifications.java</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-line" style="margin-left:-6.5cm;">
+                            <span class="keyword">public class</span> <span class="class-name">Certifications</span> {
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> DELOITTE = 
+                            <span class="string">"Deloitte - Technology Job Simulation | Deloitte Australia · Forage · May 2025"</span>;
+                            <span class="comment">// Skills: Python · Competitive Programming · Engineering</span>
+                            <a href="assets/img/cert/deloitte.jpg" target="_blank" class="credential-btn">Show Credential</a>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> GOLDMAN SACHS = 
+                            <span class="string">"Goldman Sachs · July 2025"</span>;
+                            <span class="comment">// Skills: DSA · Java · Market Analysis</span>
+                            <a href="assets/img/cert/goldy.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> ORACLE = 
+                            <span class="string">"Oracle Cloud Developer · July 2025"</span>
+                            <span class="comment">// Skills: Cloud · Development · Market Analysis</span>
+                            <a href="assets/img/cert/oracle.pdf" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> MONGODB AI = 
+                            <span class="string">"Building AI Powered Search with MongoDB · June 2025"</span>;
+                            <span class="comment">// Skills: MongoDB · AI · Search Engine</span>
+                            <a href="assets/img/cert/power.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> INTRO TO MONGODB = 
+                            <span class="string">"Introduction to MongoDB · June 2025"</span>;
+                            <span class="comment">// Skills: MongoDB · Website Development · Development</span>
+                            <a href="assets/img/cert/mongo.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> ALPHA = 
+                            <span class="string">"Alpha (DSA in Java) · Apna College · Mar 2025"</span>;
+                            <span class="comment">// Skills: DSA · Java · Competitive Programming</span>
+                            <a href="assets/img/cert/dsa.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> Design = 
+                            <span class="string">"Design Thinking · Great Learning · Dec 2024"</span>;
+                            <span class="comment">// Skills: Design Thinking · Creative Strategy</span>
+                            <a href="assets/img/cert/design_thinking.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> JAVA Basics= 
+                            <span class="string">"Java (Basics) · HackerRank · July 2024"</span>
+                            <span class="comment">// Skills: Java · Creative Strategy</span>
+                            <a href="assets/img/cert/java.jpg" target="_blank" class="credential-btn">Show Credential</a></div>
+                        <div class="code-line indent">
+                            <span class="keyword">private String</span> PROBLEM SOLVING= 
+                            <span class="string">"Problem Solving · HackerRank · July 2024"</span>;
+                            <span class="comment">// Skills: DSA · Creative Strategy · Problem Solving</span>
+                            <a href="assets/img/cert/problem.jpg" target="_blank" class="credential-btn">Show Credential</a>
+                        </div>
 
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <i class="bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h3>Email</h3>
-              <p>piyushbodhe23@gmail.com</p>
+                        <div class="code-line" style="margin-left: 1cm;">}</div>
+                    </div>
+                </div>
             </div>
-          </div><!-- End Info Item -->
+        </div>
+    </section>
 
-          <!-- Google Map -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3320414588867!2d73.8553383152614!3d18.5603128873944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0358f726fb7%3A0x4b4c5ebc8c0e7601!2sJSPM%20RSCOE!5e0!3m2!1sen!2sin!4v1687955555555"
-            frameborder="0" style="border:0; width: 100%; height: 260px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div><!-- End info-wrap -->
-      </div><!-- End col-lg-5 -->
-
-      <!-- Contact Form -->
-      <div class="col-lg-7">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input type="text" name="name" id="name-field" class="form-control" required>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="CONTACT.NET">CONTACT.NET</h2>
+                <div class="section-line"></div>
             </div>
-
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email-field" required>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>piyushbodhe23@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9022749102</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" class="cyber-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="cyber-btn primary">
+                            <span>SEND MESSAGE</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject-field" required>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Piyush Bodhe. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color:red;" aria-hidden="true"></i> and <i class="fas fa-code" aria-hidden="true">Thanks to visit my profile</i></p>
             </div>
+        </div>
+    </footer>
 
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea class="form-control" name="message" rows="8" id="message-field" required></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
-      </div><!-- End col-lg-7 -->
-
-    </div><!-- End Row -->
-  </div><!-- End Container -->
-
-</section><!-- End Contact Section -->
-
-    </section><!-- End Contact -->
-
-  </main><!-- End Main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container text-center">
-      <p class="copyright mb-0">© <span id="year"></span> <strong>Piyush Bodhe</strong>. All Rights Reserved.</p>
-      <p> Thanks to visit my website if you want to know anything about me visit my linkedin by clicking linkedin icon from side bar </p>
-    </div>
-  </footer><!-- End Footer -->
-
-  <!-- ======= Utilities ======= -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-
-  <!-- ======= Vendor JS ======= -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- ======= Main JS ======= -->
-  <script src="assets/js/main.js"></script>
-  <script src="forms/skill.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
