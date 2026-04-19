@@ -1,161 +1,108 @@
-// Smooth scroll for nav links
-document.querySelectorAll("a[href^='#']").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    document.querySelector(link.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
+ /* Smooth scroll for nav links */
+        document.querySelectorAll('a[href^=\"#"]').forEach(anchor => {
+            anchor.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
 
-// Fade elements while scrolling (optional)
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("fade-in");
-    }
-  });
-});
+        /* Hamburger menu */
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
 
-document.querySelectorAll(".card, .hero, .section").forEach(el => {
-  observer.observe(el);
-});
-/* ----------------------------
-      NAVBAR SHRINK ON SCROLL
------------------------------ */
-const navbar = document.querySelector(".nav");
+        /* Close menu on link click (mobile) */
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('active');
+            });
+        });
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add("nav-small");
-    } else {
-        navbar.classList.remove("nav-small");
-    }
-});
+        /* Project modals (demo data) */
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const modal = document.getElementById('projectModal');
+                const img = document.getElementById('modalImg');
+                const title = document.getElementById('modalTitle');
+                const desc = document.getElementById('modalDesc');
+                const buttons = document.getElementById('modalButtons');
+                const data = card.dataset.modal;
+                modal.setAttribute('aria-hidden', 'false');
+                modal.style.display = 'block';
+                if (data === '1') {
+                    img.src = 'https://via.placeholder.com/800x400/00ff88/000?text=UMS+Demo';
+                    img.alt = 'UMS Screenshot';
+                    title.textContent = 'University Management System';
+                    desc.innerHTML = 'Full Java Swing app with MySQL. Features secure login, student/faculty management, attendance &amp; fees. <br><strong>Tech:</strong> Java, Swing, JDBC, MySQL';
+                    buttons.innerHTML = '<a href="https://github.com/PiyushBodhe23/University-Management-System" target="_blank" class="cyber-btn" rel="noopener">View Code <i class="fab fa-github"></i></a>';
+                } else if (data === '2') {
+                    img.src = 'https://via.placeholder.com/800x400/ff00ff/000?text=Stockers+Demo';
+                    img.alt = 'Stockers Screenshot';
+                    title.textContent = 'Stockers Trading Platform';
+                    desc.innerHTML = 'Full-stack MERN trading app with auth, orders, portfolio. <br><strong>Tech:</strong> React, Node/Express, MongoDB, JWT';
+                    buttons.innerHTML = '<a href="https://github.com/PiyushBodhe23/Stockers" target="_blank" class="cyber-btn" rel="noopener">View Code <i class="fab fa-github"></i></a>';
+                } else {
+                    img.src = 'https://via.placeholder.com/800x400/00ff88/000?text=AlgoViz+Demo';
+                    img.alt = 'AlgoViz Screenshot';
+                    title.textContent = 'AlgoViz';
+                    desc.innerHTML = 'AI-powered algorithm visualizer. <br><strong>Tech:</strong> JS, AI integration, Canvas animations';
+                    buttons.innerHTML = '<a href="https://github.com/PiyushBodhe23/AI-Powered-Algorithm-Visualizer" target="_blank" class="cyber-btn" rel="noopener">View Code <i class="fab fa-github"></i></a>';
+                }
+            });
+        });
 
-/* ----------------------------
-      SMOOTH SCROLLING
------------------------------ */
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener("click", function (e) {
-        if (this.hash !== "") {
+        /* Modal close */
+        document.getElementById('modalClose').addEventListener('click', () => {
+            document.getElementById('projectModal').style.display = 'none';
+            document.getElementById('projectModal').setAttribute('aria-hidden', 'true');
+        });
+        window.addEventListener('click', e => {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+                e.target.setAttribute('aria-hidden', 'true');
+            }
+        });
+
+        /* Animate skills on scroll */
+        const observerOptions = { threshold: 0.5, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+                        bar.style.width = bar.style.width || '0%';
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-category').forEach(category => observer.observe(category));
+
+        /* Contact form */
+        document.getElementById('contactForm').addEventListener('submit', e => {
             e.preventDefault();
-            const target = document.querySelector(this.hash);
-            target.scrollIntoView({ behavior: "smooth" });
+            const formData = new FormData(e.target);
+            const status = document.getElementById('formStatus');
+            status.textContent = '✅ Message sent! (Demo - check console for details)';
+            status.style.color = 'var(--primary)';
+            console.log('Form submitted:', Object.fromEntries(formData));
+            e.target.reset();
+            setTimeout(() => status.textContent = '', 5000);
+        });
 
-            // Close mobile menu after clicking
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
-    });
-});
-
-/* ----------------------------
-   ACTIVE NAV LINK HIGHLIGHT
------------------------------ */
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
-
-function activateLink() {
-    let scrollPos = window.scrollY + 100;
-
-    sections.forEach(sec => {
-        if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
-            navLinks.forEach(link => link.classList.remove("active"));
-            document.querySelector(`a[href="#${sec.id}"]`)?.classList.add("active");
-        }
-    });
-}
-
-window.addEventListener("scroll", activateLink);
-
-/* ----------------------------
-      HAMBURGER MENU
------------------------------ */
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-});
-
-window.addEventListener("click", (e) => {
-    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-        navMenu.classList.remove("active");
-        hamburger.classList.remove("active");
-    }
-});
-
-/* -------------------------------------------------
-      PROJECT MODAL POPUP
--------------------------------------------------- */
-const modal = document.getElementById("projectModal");
-const modalImg = document.getElementById("modalImg");
-const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-const modalButtons = document.getElementById("modalButtons");
-const modalClose = document.querySelector(".modal-close");
-
-const projectCards = document.querySelectorAll(".project-card");
-
-projectCards.forEach(card => {
-    card.addEventListener("click", () => {
-        let imgSrc = card.querySelector("img").src;
-        let title = card.querySelector("h3").innerText;
-        let desc = card.querySelector("p").innerHTML;
-
-        modalImg.src = imgSrc;
-        modalTitle.innerText = title;
-        modalDesc.innerHTML = desc;
-        modalButtons.innerHTML = `
-            <a href="https://github.com/PiyushBodhe23" target="_blank">GitHub</a>
-        `;
-
-        modal.style.display = "flex";
-    });
-});
-
-modalClose.addEventListener("click", () => {
-    modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-    if (e.target === modal) modal.style.display = "none";
-});
-
-window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") modal.style.display = "none";
-});
-
-/* -------------------------------------------------
-    EMAILJS FORM HANDLING (Already in your HTML)
--------------------------------------------------- */
-
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const status = document.getElementById("form-status");
-    status.innerText = "Sending...";
-    status.style.color = "#ff8a00";
-
-    emailjs.send("service_kr8w5kl", "template_kypr6vn", {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-    })
-    .then(() => {
-        status.innerText = "✔ Message sent successfully!";
-        status.style.color = "#00ff99";
-        document.getElementById("contactForm").reset();
-
-        setTimeout(() => { status.innerText = ""; }, 3000);
-    })
-    .catch(() => {
-        status.innerText = "❌ Failed to send message.";
-        status.style.color = "#ff4444";
-
-        setTimeout(() => { status.innerText = ""; }, 3000);
-    });
-});
+        /* Navbar scroll effect */
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10,10,10,0.95)';
+                nav.style.backdropFilter = 'blur(20px)';
+            } else {
+                nav.style.background = 'rgba(26,26,26,0.95)';
+            }
+        });
